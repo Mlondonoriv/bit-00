@@ -1,0 +1,21 @@
+img{
+
+    width: 200px;
+    height: 200px;
+    background-color: beige;
+}
+
+#menu {
+    margin-left: 180px;
+  }
+  .menu-navbar .navbar-collapse {
+    display: flex;
+    justify-content: flex-start !important;
+    gap: 50px !important;
+  }
+  
+  /* ==============================REMOVER EFECTO HOVER EN NAVBAR =========================== */
+  .menu-navbar .navbar-collapse .navbar-nav .container-menu > li > a:hover {
+    text-decoration: none !important;
+    background-color: transparent !important;
+  }

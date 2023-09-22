@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios</title>
+  </head>
+  <body>
+    <h1>Ejercicios</h1>
+<!-- ============================================== Ejercicio 1 ========================================================== -->
+
+    <h3>Ejercicio 1</h3>
+
+    <p>pedir nombre y apellido y saludar por nombre y apellido</p>
+
+    <form action="" id="get_form1">
+      <input id="get_name" type="text" placeholder="Ingresa tu nombre" />
+      <input id="get_lastName" type="text" placeholder="Ingresa tu Apellido" />
+
+      <button type="submit" onclick="saludar()">Saludar</button>
+    </form>
+
+    <p id="add_salute" class="titulo">  </p>
+    <hr>
+
+<!-- ============================================= Ejercicio 2 ==================================================================-->
+
+<h3>Ejercicio 2</h3>
+<p>Preguntar al ususario si desea continuar, responder con hola o adios</p>
+
+<h3>Deseas Continuar?</h3>
+<form action="" id="get_form2">
+  
+    <button id="btnHola" onclick="hola()">Si</button>
+    <button id ="btnAdios" onclick="adios()">No</button>
+    
+    <form action="" id="get_form"></form>
+  <p id="continuar"></p>
+  <hr>
+  <!-- ============================================= Ejercicio 3 ==================================================================-->
+
+<h3>Ejercicio 3</h3>
+<p>Leer nombre y edad, Mostrar si es o no mayor de edad.</p>
+
+
+<form action="" id="get_form3">
+    <input id="get_name3" type="text" placeholder="Ingresa tu nombre" />
+    <input id="get_age" type="number" placeholder="Ingresa tu edad" />
+
+    <button type="submit" onclick="plus18()">Enviar</button>
+  </form>
+
+  <p id="mayor_menor" class="titulo">  </p>
+  <hr>
+
+  <!-- ============================================= Ejercicio 4 ==================================================================-->
+<h3>Ejercicio 4</h3>
+<p>Leer un rol, (admin, ventas, cliente), acceso de acuerdo al rol.</p>
+<section >
+    <form action="" id="get_form4">
+        
+        <label for="get_admin"> Administrador</label>
+        <input id="get_admin" name type="radio"  />
+    
+        <label for="get_seller"> Vendedor</label>
+        <input id="get_seller" type="radio"  />
+        
+        <label for="get_client"> Cliente</label>
+        <input id="get_client" type="radio"  />
+    
+        <button type="submit" onclick="rol()">Enviar</button>
+      </form>
+</section>
+
+
+  <p id="mayor_menor" class="titulo">  </p>
+  <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
