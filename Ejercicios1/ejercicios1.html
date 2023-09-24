@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejercicios</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <h1>Ejercicios</h1>
-<!-- ============================================== Ejercicio 1 ========================================================== -->
+    <!-- ============================================== Ejercicio 1 ========================================================== -->
 
     <h3>Ejercicio 1</h3>
 
@@ -20,72 +21,109 @@
       <button type="submit" onclick="saludar()">Saludar</button>
     </form>
 
-    <p id="add_salute" class="titulo">  </p>
-    <hr>
+    <p id="add_salute" class="titulo"></p>
+    <hr />
 
-<!-- ============================================= Ejercicio 2 ==================================================================-->
+    <!-- ============================================= Ejercicio 2 ==================================================================-->
 
-<h3>Ejercicio 2</h3>
-<p>Preguntar al ususario si desea continuar, responder con hola o adios</p>
+    <h3>Ejercicio 2</h3>
+    <p>Preguntar al ususario si desea continuar, responder con hola o adios</p>
 
-<h3>Deseas Continuar?</h3>
-<form action="" id="get_form2">
-  
-    <button id="btnHola" onclick="hola()">Si</button>
-    <button id ="btnAdios" onclick="adios()">No</button>
-    
-    <form action="" id="get_form"></form>
-  <p id="continuar"></p>
-  <hr>
-  <!-- ============================================= Ejercicio 3 ==================================================================-->
+    <h4>Deseas Continuar?</h4>
+    <form action="" id="get_form2">
+      <button id="btnHola" onclick="hola()">Si</button>
+      <button id="btnAdios" onclick="adios()">No</button>
+    </form>
+    <p id="continuar"></p>
+    <hr />
+    <!-- ============================================= Ejercicio 3 ==================================================================-->
 
-<h3>Ejercicio 3</h3>
-<p>Leer nombre y edad, Mostrar si es o no mayor de edad.</p>
+    <h3>Ejercicio 3</h3>
+    <p>Leer nombre y edad, Mostrar si es o no mayor de edad.</p>
 
+    <form action="" id="get_form3">
+      <input id="get_name3" type="text" placeholder="Ingresa tu nombre" />
+      <input id="get_age" type="number" placeholder="Ingresa tu edad" />
 
-<form action="" id="get_form3">
-    <input id="get_name3" type="text" placeholder="Ingresa tu nombre" />
-    <input id="get_age" type="number" placeholder="Ingresa tu edad" />
+      <button type="submit" onclick="plus18()">Enviar</button>
+    </form>
 
-    <button type="submit" onclick="plus18()">Enviar</button>
-  </form>
+    <p id="mayor_menor" class="titulo"></p>
+    <hr />
 
-  <p id="mayor_menor" class="titulo">  </p>
-  <hr>
-
-  <!-- ============================================= Ejercicio 4 ==================================================================-->
-<h3>Ejercicio 4</h3>
-<p>Leer un rol, (admin, ventas, cliente), acceso de acuerdo al rol.</p>
-<section >
-    <form action="" id="get_form4">
-        
-        <label for="get_admin"> Administrador</label>
-        <input id="get_admin" name type="radio"  />
-    
-        <label for="get_seller"> Vendedor</label>
-        <input id="get_seller" type="radio"  />
-        
-        <label for="get_client"> Cliente</label>
-        <input id="get_client" type="radio"  />
-    
-        <button type="submit" onclick="rol()">Enviar</button>
+    <!-- ============================================= Ejercicio 4 ==================================================================-->
+    <h3>Ejercicio 4</h3>
+    <p>Leer un rol, (admin, ventas, cliente), acceso de acuerdo al rol.</p>
+    <section>
+      <form id="get_form4" action="">
+        <label>Administrador</label>
+        <input type="radio" name="selection" value="administrador" required />
+        <br />
+        <label>Vendedor</label>
+        <input type="radio" name="selection" value="vendedor" required />
+        <br />
+        <label>Cliente</label>
+        <input type="radio" name="selection" value="cliente" required />
+        <br />
+        <button id="get_selection" type="submit" onclick="rol()">Enviar</button>
       </form>
-</section>
+
+      <p id="addRol"></p>
+    </section>
+
+    <hr />
+    <!-- ============================================= Ejercicio 5 ==================================================================-->
+
+    <h3>Ejercicio 5</h3>
+    <p>
+      Leer un número, mostrar el doble de n. <br />
+      Leer un número, mostrar la mitad de n. <br />
+      Leer un número, mostrar si es positivo, negativo o cero. <br />
+      Leer un número, mostrar si es par o impar.
+    </p>
+
+    <section>
+      <form id="get_form5" action="">
+        <label>Ingresa un número</label>
+        <input id="newNumber" type="number" required />
+
+        <br />
+        <button id="get_selection" type="submit" onclick="calc()">
+          Enviar
+        </button>
+      </form>
+
+      <p id="addNum"></p>
+      <p id="divNum"></p>
+      <p id="posNeg"></p>
+      <p id="evenORodd"></p>
+    </section>
+
+    <hr />
+
+        <!-- ============================================= Ejercicio 6 ==================================================================-->
+<h3>Ejercicio 6</h3>
+
+<p> Leer dos números, mostrar el mayor. <br>
+   Leer dos números, mostrar operaciones básicas (+,-,x,/,%). <br>
+   Leer dos números, mostrar la suma dividido en la resta.</p>
+
+   <p>Ingresa dos Números </p>
+<form id="get_form6" action="">
 
 
-  <p id="mayor_menor" class="titulo">  </p>
-  <hr>
+<input id="num1" type="number" placeholder="Primer número">
+<input id="num2" type="number" placeholder="Segundo número">
 
+<button type="input" onclick="operations()"> hacer operaciones</button>
 
+</form>
 
-
-
-
-
-
-
-
-
+<p id="suma">  </p>
+<p id="resta">  </p>
+<p id="mult">  </p>
+<p id="div">  </p>
+<p id="resto">  </p>
 
 
     <script src="script.js"></script>
